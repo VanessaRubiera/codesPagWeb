@@ -52,7 +52,7 @@
                 <option value="OTRO">OTRO</option>
               </select>
             </td>
-            <td><input type="text" name="otro"/></td>
+            <td><input id="otro2" type="text" name="otro2" disabled/></td>
           </tr>
           <tr>
             <td>Otro:</td>
@@ -60,7 +60,7 @@
           </tr>
           <tr>
             <td>
-              <select name="otro">
+              <select id="otro" name="otro" onchange="habilitarO()">
                 <option value="SI">SI</option>
                 <option value="NO" selected>NO</option>
               </select>
