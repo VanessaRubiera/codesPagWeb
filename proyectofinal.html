@@ -1,10 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="utf-8"/>
+    <title>Práctica 30</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/rubieravillarreal_practica30.css"/>
   </head>
   <body>
 
+      <h1>Campamento juvenil 2021</h1>
+      <h2>Inscripción</h2>
+
+      <form action="" method="post" id="formulario">
+
+        <table>
+          <tr>
+            <td>Nombres:</td>
+            <td>Apellidos:</td>
+          </tr>
+          <tr>
+            <td><input type="text" name="nombres" autofocus required /></td>
+            <td><input type="text" name="apellidos" required /></td>
+          </tr>
+          <tr>
+            <td>Edad:</td>
+            <td>Sexo:</td>
+          </tr>
+          <tr>
+            <td><input type="number" name="edad" min="12" max="75" required/></td>
+            <td>
+              <select name="sexo">
+                <option value="FEMENINO">FEMENINO</option>
+                <option value="MASCULINO">MASCULINO</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Ciudad:</td>
+            <td>Otro:</td>
+          </tr>
+          <tr>
+            <td>
+              <select id="ciudad" name="ciudad" onchange="habilitar()"> <!-- Utilizar onchange para el select por la seleccion de la opcion -->
+                <option value="ENSENADA">ENSENADA</option>
+                <option value="TIJUANA">TIJUANA</option>
+                <option value="MEXICALI">MEXICALI</option>
+                <option value="ROSARITO">ROSARITO</option>
+                <option value="TECATE">TECATE</option>
+                <option value="SANFELIPE">SAN FELIPE</option>
+                <option value="OTRO">OTRO</option>
+              </select>
+            </td>
+            <td><input type="text" name="otro"/></td>
+          </tr>
+          <tr>
+            <td>Otro:</td>
+            <td>Celular: (10 dígitos)</td>
+          </tr>
+          <tr>
+            <td>
+              <select name="otro">
+                <option value="SI">SI</option>
+                <option value="NO" selected>NO</option>
+              </select>
+            </td>
+            <td><input type="tel" name="celular" placeholder="Ej. 6641201560" minlenght="10" maxlength="10" required/></td>
+          </tr>
+          <tr>
+            <td>Transporte:</td>
+            <td>Comentarios:</td>
+          </tr>
+          <tr>
+            <td>
+              <select id="transporte" name="transporte" disabled>
+                <option value="SI">SI</option>
+                <option value="NO" selected>NO</option>
+              </select>
+            </td>
+            <td rowspan="3">
+              <textarea id="comentarios" name="comentarios" rows="5" cols="25" placeholder="Escribe algo que quieras comentar"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Camisa:</td>
+          </tr>
+          <tr>
+            <td>
+              <select id="camisa" name="camisa" onchange="aparecer()">
+                <option value="SI">SI</option>
+                <option value="NO" selected>NO</option>
+              </select>
+            </td>
+          </tr>
+          <tr class="ocultar">
+            <td>Talla:</td>
+            <td></td>
+          </tr>
+          <tr class="ocultar">
+            <td>
+              <select name="talla_camisa">
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input id="boton" type="submit" name="enviar"/></td>
+          </tr>
+        </table>
+      </form>
+
+    <script type="text/javascript" src="js/rubieravillarreal_practica30.js"></script>
   </body>
 </html>
