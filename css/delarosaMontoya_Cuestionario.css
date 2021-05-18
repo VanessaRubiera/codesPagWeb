@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(, 0, 0);
+}
+table{
+
+    margin-left: 30.5%;
+    background: rgba(76, 75, 80, 0.3);
+}
+td{
+  padding: 10px;
+}
+body{
+  background-image: url("https://openclipart.org/image/2400px/svg_to_png/8006/carlitos-Cartoon-Landscape.png");
+  background-size: cover;
+  background-position: center,right;
+  background-repeat: no-repeat;
+
+}
+
+input.x{
+  height: 50px;
+  width: 100%;
+  background: rgb(120, 50,20 );
+  border-color:rgb(100, 150, 255);
+}
+
+h1,h2{
+  text-align: center;
+
+}
+select.Tall,select.Camisa,select.Transporte,select.Otro,select.Ciudad,select.Sexo
+{
+width: 100%;
+}
+
+.ocultar{
+  display: none;
+}

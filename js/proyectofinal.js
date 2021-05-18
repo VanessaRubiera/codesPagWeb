@@ -30,10 +30,10 @@ function aparecer(){
 }
 
 
-function habilitarO(){
+function habilitarOtro(){
   var selectOtro = document.getElementById('otro'); //Guardar el elemento del documento que tiene por Id = "otro"
-  if(selectOtro.selectedIndex!=0){
-    document.getElementById('otro2').disabled = true; //EL elemento con Id = "otro" se desabilitara
+  if(selectOtro.selectedIndex==1){
+    document.getElementById('otro2').disabled = true; //EL elemento con Id = "otroE" se desabilitara
   }
   else{
     document.getElementById('otro2').disabled = false;
